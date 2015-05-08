@@ -1,0 +1,20 @@
+{
+    "newStorageAccountName": {
+        "value": "armdeploy1"
+    },
+    "adminUsername": {
+        "value": ""
+    },
+    "adminPassword": {
+        "value": ""
+    },
+    "dnsNameForPublicIP": {
+        "value": "delete-me-icords-test-vm-dev"
+    },
+    "windowsOSVersion": {
+        "value": "2012-R2-Datacenter"
+    },
+    "vmSize": {
+        "value": "Standard_A0"
+    }
+}
