@@ -154,7 +154,6 @@
             "name": "[variables('vmName')]",
             "location": "[variables('location')]",
             "dependsOn": [
-                "[concat('Microsoft.Storage/storageAccounts/', parameters('userImageStorageAccountName'))]",
                 "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
             ],
             "properties": {
