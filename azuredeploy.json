@@ -184,7 +184,6 @@
                         },
                         "vhd": {
                             "uri": "[concat('http://',parameters('userImageStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('OSDiskName'),'.vhd')]"
-                            "me" : "[concat('http://',parameters('userImageStorageAccountName'),'.blob.core.windows.net/',parameters('userImageStorageContainerName'),'/',variables('vmName'),'osDisk.vhd')]"
                         }
                         
                     }
