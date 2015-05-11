@@ -37,7 +37,7 @@
         },
         "dnsNameForPublicIP": {
             "type": "string",
-            "defaultValue": "delete-me-icords-test-vm",
+            "defaultValue": "delete-me-icords-test-vm-from-vhd",
             "metadata": {
                 "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
             }
