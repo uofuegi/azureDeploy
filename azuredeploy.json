@@ -183,9 +183,8 @@
                             "uri" : "[variables('userImageName')]"
                         },
                         "vhd": {
-                            "uri": "[concat('http://',parameters('userImageStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('OSDiskName'),'.vhd')]"
+                            "uri": "[variables('osDiskVhdName')]"
                         }
-                        
                     }
                 },
                 "networkProfile": {
