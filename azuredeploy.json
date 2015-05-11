@@ -37,13 +37,14 @@
         },
         "dnsNameForPublicIP": {
             "type": "string",
-            "defaultValue": "delete-me-icords-test-vm-from-vhd",
+            "defaultValue": "delete-me-icords-test-vm-for-vhd",
             "metadata": {
                 "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
             }
         },
         "osType" : {
-            "type" : "string",
+            "type": "string",
+            "defaultValue": "windows",
             "allowedValues" : [
                 "windows",
                 "linux"
@@ -88,15 +89,6 @@
         "osDiskVhdName" : "[concat('http://',parameters('userImageStorageAccountName'),'.blob.core.windows.net/',parameters('userImageStorageContainerName'),'/',variables('vmName'),'osDisk.vhd')]"
     },
     "resources": [
-        {
-            "type": "Microsoft.Storage/storageAccounts",
-            "name": "[parameters('userImageStorageAccountName')]",
-            "apiVersion": "2015-05-01-preview",
-            "location": "[variables('location')]",
-            "properties": {
-                "accountType": "[variables('storageAccountType')]"
-            }
-        },
         {
             "apiVersion": "2015-05-01-preview",
             "type": "Microsoft.Network/publicIPAddresses",
